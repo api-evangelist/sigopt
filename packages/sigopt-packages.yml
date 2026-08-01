@@ -1,0 +1,86 @@
+generated: '2026-07-21'
+method: searched
+source: >-
+  Probed public registries (PyPI, Maven Central) and the SigOpt GitHub
+  organization (https://github.com/sigopt) for first-party client libraries.
+notes: >-
+  SigOpt (ML experiment/hyperparameter optimization) was acquired by Intel in
+  2020 and its hosted API/platform was subsequently shut down (sigopt.com now
+  301-redirects to an Intel corporate redirector; api./app./docs.sigopt.com no
+  longer resolve). The client libraries below remain published on their
+  registries and in the still-public github.com/sigopt organization, so they are
+  recorded as real, first-party historical packages. Most repos are archived;
+  the Python client (sigopt-python) and the open-source engine components
+  (sigoptlite, libsigopt) are not.
+packages:
+  - language: python
+    registry: pypi
+    name: sigopt
+    url: https://pypi.org/project/sigopt/
+    install: pip install sigopt
+    version: 8.8.3
+    released: '2024-04-29'
+    source: https://github.com/sigopt/sigopt-python
+    official: true
+    description: SigOpt Python API Client (the primary/officially maintained client).
+  - language: java
+    registry: maven-central
+    name: com.sigopt:sigopt-java
+    url: https://search.maven.org/artifact/com.sigopt/sigopt-java
+    install: '<dependency><groupId>com.sigopt</groupId><artifactId>sigopt-java</artifactId></dependency>'
+    source: https://github.com/sigopt/sigopt-java
+    official: true
+    archived: true
+    description: The SigOpt Java API Client.
+  - language: scala
+    registry: maven-central
+    name: com.sigopt:sigopt-spark
+    url: https://search.maven.org/search?q=g:com.sigopt%20AND%20a:sigopt-spark_2.12
+    install: 'libraryDependencies += "com.sigopt" %% "sigopt-spark" % "<version>"'
+    source: https://github.com/sigopt/sigopt-spark
+    official: true
+    archived: true
+    description: SigOpt integration for Apache Spark (published for Scala 2.10/2.11/2.12).
+  - language: r
+    registry: github
+    name: SigOptR
+    url: https://github.com/sigopt/SigOptR
+    install: devtools::install_github("sigopt/SigOptR")
+    source: https://github.com/sigopt/SigOptR
+    official: true
+    archived: true
+    description: SigOpt's public R client.
+  - language: python
+    registry: github
+    name: sigopt-sklearn
+    url: https://github.com/sigopt/sigopt-sklearn
+    install: pip install git+https://github.com/sigopt/sigopt-sklearn
+    source: https://github.com/sigopt/sigopt-sklearn
+    official: true
+    archived: true
+    description: SigOpt wrappers for scikit-learn methods.
+  - language: matlab
+    registry: github
+    name: sigopt-matlab
+    url: https://github.com/sigopt/sigopt-matlab
+    install: 'clone https://github.com/sigopt/sigopt-matlab'
+    source: https://github.com/sigopt/sigopt-matlab
+    official: true
+    archived: true
+    description: MATLAB interface for running SigOpt experiments.
+  - language: python
+    registry: github
+    name: sigoptlite
+    url: https://github.com/sigopt/sigoptlite
+    install: pip install git+https://github.com/sigopt/sigoptlite
+    source: https://github.com/sigopt/sigoptlite
+    official: true
+    description: Standalone SigOpt client driver (open-source, non-archived).
+  - language: python
+    registry: github
+    name: libsigopt
+    url: https://github.com/sigopt/libsigopt
+    install: pip install git+https://github.com/sigopt/libsigopt
+    source: https://github.com/sigopt/libsigopt
+    official: true
+    description: Optimization utilities module underpinning the open-source SigOpt engine.

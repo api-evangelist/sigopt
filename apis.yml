@@ -1,7 +1,30 @@
 aid: sigopt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sigopt.png
 name: SigOpt
-description: SigOpt is a company surfaced as a portfolio company of a16z, dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SigOpt was a machine learning experimentation and optimization platform whose
+  API applied ensemble Bayesian and black-box optimization to tune model
+  hyperparameters, run design-of-experiments, and track experiment metadata at
+  scale. Developers integrated its REST API and first-party clients (Python,
+  Java, R, scikit-learn, Spark, MATLAB) to drive automated hyperparameter search
+  from their training loops. SigOpt was acquired by Intel in 2020 and its hosted
+  API and platform were subsequently discontinued; sigopt.com now redirects to
+  an Intel corporate redirector and the api./app./docs.sigopt.com hosts no longer
+  resolve. The GitHub organization (github.com/sigopt) and the published client
+  libraries remain public as historical, first-party artifacts, including an
+  open-sourced server and optimization engine (sigopt-server, sigoptlite,
+  libsigopt).
 url: https://raw.githubusercontent.com/api-evangelist/sigopt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +33,42 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-reason: >-
+  Acquired by Intel (2020); hosted API/platform shut down. Only historical
+  first-party packages and the public GitHub organization survive.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Machine Learning
+- Optimization
+- Hyperparameter Tuning
+- Experimentation
+- Bayesian Optimization
+- MLOps
+- Data Science
+- Defunct
 apis: []
+common:
+- type: Website
+  url: https://sigopt.com
+- type: GitHubOrganization
+  url: https://github.com/sigopt
+- type: SourceCode
+  url: https://github.com/sigopt
+- type: Packages
+  url: packages/sigopt-packages.yml
+- type: SDKs
+  url: packages/sigopt-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
