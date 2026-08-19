@@ -37,7 +37,7 @@ x-status: defunct
 x-status-reason: >-
   Acquired by Intel (2020); hosted API/platform shut down. Only historical
   first-party packages and the public GitHub organization survive.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
