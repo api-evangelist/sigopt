@@ -53,7 +53,7 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
-- Machine-Learning
+- Machine Learning
 - Optimization
 - Hyperparameter Tuning
 - Experimentation
@@ -71,6 +71,7 @@ tags_raw:
 - MLOps
 - Data Science
 - Defunct
+- Machine-Learning
 apis: []
 common:
 - type: Website
